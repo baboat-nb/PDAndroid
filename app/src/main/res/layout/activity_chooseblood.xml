@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="ค่าผลเลือด"
+            android:textColor="@android:color/white"
+            android:gravity="center_vertical"
+            android:textAlignment="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/TabHistoryBlood"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_weight="1"
+                android:textColor="@android:color/white"
+                android:gravity="center_vertical"
+                android:text="ประวัติค่าผลเลือด"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/TabChooseBlood"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/white"
+                android:text="เลือกค่าผลเลือด"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/TabInsertBlood"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_weight="1"
+                android:text="กรอกค่าผลเลือด"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/white"
+                android:textAlignment="center"/>
+        </LinearLayout>
+        
+        <FrameLayout
+            android:id="@+id/contentBlood"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+        </FrameLayout>
+    </LinearLayout>
+
+</RelativeLayout>

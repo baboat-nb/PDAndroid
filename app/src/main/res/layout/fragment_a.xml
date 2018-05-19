@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="สร้างการบันทึกล้างไต"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:padding="16dp"
+            android:textSize="12sp"
+            android:text="รายการบันทึกที่ยังไม่สมบูรณ์"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:paddingTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="วันที่"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="รอบที่"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/listDateAndRound"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp"
+                android:background="@android:color/white">
+
+
+            </ListView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <!--<ListView-->
+    <!--android:id="@+id/listDateAndRound"-->
+    <!--android:layout_margin="20dp"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"></ListView>-->
+
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/custom_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="20dp"
+        android:paddingBottom="9dp"
+        android:paddingLeft="22dp"
+        android:paddingRight="22dp"
+        android:paddingTop="7dp"
+        fancy:fb_borderColor="#FFFFFF"
+        fancy:fb_borderWidth="1dp"
+        fancy:fb_defaultColor="#FB8C00"
+        fancy:fb_focusColor="#dc8609"
+        fancy:fb_radius="100dp"
+        fancy:fb_text="+"
+        fancy:fb_textColor="#FFFFFF"
+        fancy:fb_textSize="35sp" />
+
+
+</RelativeLayout>

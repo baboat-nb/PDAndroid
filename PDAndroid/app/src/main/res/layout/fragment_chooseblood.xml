@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="K(โพแทสเซียม)"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/ChooseKGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp">
+
+                <RadioButton
+                    android:id="@+id/OptionK1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="โพแทสเซียมต่ำ"
+                    android:textColor="@color/colorShadowStart" />
+
+                <RadioButton
+                    android:id="@+id/OptionK2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="โพแทสเซียมปานกลาง"
+                    android:textColor="@color/colorShadowStart" />
+
+                <RadioButton
+                    android:id="@+id/OptionK3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="โพแทสเซียมสูง"
+                    android:textColor="@color/colorShadowStart" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/my_border"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="P(ฟอสฟอรัส)"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/ChoosePGroup"
+                android:paddingLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/OptionP1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ฟอสฟอรัสต่ำ"
+                    android:textColor="@color/colorShadowStart" />
+
+                <RadioButton
+                    android:id="@+id/OptionP2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ฟอสฟอรัสปานกลาง"
+                    android:textColor="@color/colorShadowStart" />
+
+                <RadioButton
+                    android:id="@+id/OptionP3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ฟอสฟอรัสสูง"
+                    android:textColor="@color/colorShadowStart" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/my_border"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Alb(แอลบูมิน)"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/ChooseAlbGroup"
+                android:paddingLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/OptionAlb1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="แอลบูมินต่ำ"
+                    android:textColor="@color/colorShadowStart" />
+
+                <RadioButton
+                    android:id="@+id/OptionAlb2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="แอลบูมินปกติ"
+                    android:textColor="@color/colorShadowStart" />
+
+                <RadioButton
+                    android:id="@+id/OptionAlb3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="แอลบูมินดี"
+                    android:textColor="@color/colorShadowStart" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/ChooseBloodButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/login__button_border"
+            android:gravity="center"
+            android:text="บันทึก"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+</ScrollView>
+
+</RelativeLayout>

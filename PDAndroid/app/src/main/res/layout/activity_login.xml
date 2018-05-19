@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8f2829">
+
+    <ImageView
+        android:id="@+id/LoginBack"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/patient_diary"
+        android:scaleType="fitEnd"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|center_horizontal"
+        android:padding="32dp"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:background="@drawable/login_border"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:weightSum="1"
+            android:layout_weight="0.31">
+
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginBottom="16dp"-->
+                <!--android:layout_marginTop="16dp"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:text="Patient Diary"-->
+                <!--android:textAlignment="center"-->
+                <!--android:textColor="@color/colorPrimary"-->
+                <!--android:textSize="24sp" />-->
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="2dp"
+                android:src="@drawable/logo_png"/>
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890"
+                android:inputType="textFilter"
+                android:hint="ชื่อผู้ใช้"
+                android:padding="16dp" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:hint="รหัสผ่าน"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890"
+                android:inputType="textPassword"
+                android:padding="16dp" />
+
+            <TextView
+                android:id="@+id/forgetPassLoginPage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginRight="15dp"
+                android:gravity="right"
+                android:text="ลืมรหัสผ่าน ?"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/button_login"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/login_button_border_2"
+                android:gravity="center"
+                android:text="เข้าสู่ระบบ"
+                android:textColor="@android:color/white" />
+
+
+
+            <!--<Button-->
+                <!---->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginBottom="16dp"-->
+                <!--android:background="@drawable/login__button_border"-->
+                <!--android:gravity="center"-->
+                <!--android:text="สมัครสมาชิก"-->
+                <!--android:textColor="@android:color/white" />-->
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="สมัครสมาชิก"
+            android:layout_gravity="end"
+            android:paddingRight="10dp"
+            android:textColor="@android:color/white"
+            android:textAlignment="viewEnd" />
+
+    </LinearLayout>
+
+</RelativeLayout>

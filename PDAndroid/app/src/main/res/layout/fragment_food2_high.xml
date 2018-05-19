@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/my_border"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="ประเภทอาหาร"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/HighShowAll"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:paddingRight="10dp"
+            android:text="แสดงทั้งหมด" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/FoodLayoutMeat_High"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@drawable/food_border"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="6dp"
+                    android:background="@drawable/chicken_circle"
+                    android:padding="10dp"
+                    android:src="@drawable/chickennoback" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="17dp"
+                    android:gravity="center_vertical"
+                    android:text="เนื้อสัตว์"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"></FrameLayout>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/expand_button" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/FoodLayoutRice_High"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@drawable/food_border"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="6dp"
+                    android:background="@drawable/rice_circle"
+                    android:padding="10dp"
+                    android:src="@drawable/ricenoback" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="17dp"
+                    android:gravity="center_vertical"
+                    android:text="ข้าว/แป้ง"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"></FrameLayout>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/expand_button" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/FoodLayoutHighVegetable_High"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@drawable/food_border"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="6dp"
+                    android:background="@drawable/vegetablehigh_circle"
+                    android:padding="10dp"
+                    android:src="@drawable/carrotnoback" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="17dp"
+                    android:gravity="center_vertical"
+                    android:text="ผักโพแทสเซียมสูง"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"></FrameLayout>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/expand_button" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/FoodLayoutHighFruit_High"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@drawable/food_border"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="6dp"
+                    android:background="@drawable/fruithigh_circle"
+                    android:padding="10dp"
+                    android:src="@drawable/grapenoback" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="17dp"
+                    android:gravity="center_vertical"
+                    android:text="ผลไม้โพแทสเซียมสูง"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"></FrameLayout>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/expand_button" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/FoodLayoutOil_High"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@drawable/food_border"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="6dp"
+                    android:background="@drawable/oil_circle"
+                    android:padding="10dp"
+                    android:src="@drawable/oilnoback" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="17dp"
+                    android:gravity="center_vertical"
+                    android:text="ไขมัน/น้ำมัน"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"></FrameLayout>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/expand_button" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/FoodLayoutSalt_High"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@drawable/food_border"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="6dp"
+                    android:background="@drawable/salt_circle"
+                    android:padding="10dp"
+                    android:src="@drawable/saltnoback" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="17dp"
+                    android:gravity="center_vertical"
+                    android:text="โซเดียม"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"></FrameLayout>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/expand_button" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

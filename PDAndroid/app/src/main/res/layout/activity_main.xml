@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    tools:context="com.project.liveat500px.activity.MainActivity">
+
+    <!-- Content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+        <com.ss.bottomnavigation.BottomNavigation
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorPrimary">
+
+            <com.ss.bottomnavigation.TabItem
+                android:id="@+id/tab_create"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:tab_icon="@drawable/inputred"
+                app:tab_text="บันทึก" />
+
+            <com.ss.bottomnavigation.TabItem
+                android:id="@+id/tab_data"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:tab_icon="@drawable/datared"
+                app:tab_text="ดูบันทึก" />
+
+            <com.ss.bottomnavigation.TabItem
+                android:id="@+id/tab_graph"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:tab_icon="@drawable/graphred"
+                app:tab_text="กราฟ" />
+
+            <com.ss.bottomnavigation.TabItem
+                android:id="@+id/tab_food"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:tab_icon="@drawable/vegetables"
+                app:tab_text="อาหาร" />
+
+            <com.ss.bottomnavigation.TabItem
+                android:id="@+id/tab_alert"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:tab_icon="@drawable/alertsred"
+                app:tab_text="เตือน" />
+        </com.ss.bottomnavigation.BottomNavigation>
+
+        <FrameLayout
+            android:id="@+id/contentContainer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <!-- Menu -->
+    <LinearLayout
+        android:layout_width="@dimen/drawer_menu_width"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@drawable/playingwithreds"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_gravity="left|top"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="55dp"
+            android:src="@drawable/hugh"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:textColor="#ffffff"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtsurname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:textColor="#ffffff"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:paddingBottom="16dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/edit" />
+
+            <TextView
+                android:id="@+id/txtedit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="แก้ไขโปรไฟล์"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/MainBloodResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/menu_border"
+                android:orientation="horizontal"
+                android:paddingBottom="16dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/blood" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="ค่าผลเลือด"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/CallKidney"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/menu_border"
+                android:orientation="horizontal"
+                android:paddingBottom="16dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/phonecall" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="เบอร์โทรหน่วยไต"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/phoneKidney"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:autoLink="phone"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/CallHospital"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/menu_border"
+                android:orientation="horizontal"
+                android:paddingBottom="16dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/phonecall" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="เบอร์โทรพยาบาล"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/phoneHospital"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:autoLink="phone"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/menu_border"
+                android:orientation="horizontal"
+                android:paddingBottom="16dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/keylock" />
+
+                <TextView
+                    android:id="@+id/MainChangePassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="เปลี่ยนรหัสผ่าน"/>
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"></FrameLayout>
+
+            <Button
+                android:id="@+id/btnlogout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ออกจากระบบ"
+                android:textAlignment="center"
+                android:textColor="#ff0000" />
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>

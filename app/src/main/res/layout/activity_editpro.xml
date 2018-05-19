@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/mock">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.5"
+        android:background="@android:color/black"
+        android:orientation="vertical"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/editprofile_image"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/hugh"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#a2a2a2"
+                android:padding="25dp"
+                android:text="โปรไฟล์"
+                android:textColor="@android:color/black" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <!-- ชื่อ -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingLeft="33dp"
+                            android:text="ชื่อ" />
+
+                        <EditText
+                            android:id="@+id/editName"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:layout_weight="1"
+                            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ
+                            abcdefghijklmnopqrstuvwxyz
+                            1234567890กขฃคฅฆงจฉชซฌญฎฏฐฑฒณดตถทธนบปผฝพฟภมยรฤลฦวศษสหฬอฮ"
+                            android:inputType="textFilter"
+                            android:textSize="14sp"
+                            android:background="@drawable/edittext_border"/>
+
+                    </LinearLayout>
+                    <!-- นามสกุล -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingLeft="33dp"
+                            android:text="นามสกุล" />
+
+                        <EditText
+                            android:id="@+id/editLastName"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:layout_weight="1"
+                            android:textSize="14sp"
+                            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ
+                            abcdefghijklmnopqrstuvwxyz
+                            1234567890กขฃคฅฆงจฉชซฌญฎฏฐฑฒณดตถทธนบปผฝพฟภมยรฤลฦวศษสหฬอฮ"
+                            android:inputType="textFilter"
+                            android:background="@drawable/edittext_border" />
+
+                    </LinearLayout>
+                    <!-- เพศ -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingLeft="33dp"
+                            android:text="เพศ" />
+
+                        <EditText
+                            android:id="@+id/editSex"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:layout_weight="1"
+                            android:textSize="14sp"
+                            android:background="@drawable/edittext_border"/>
+                        <!--<RadioGroup-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:orientation="horizontal">-->
+                        <!--<RadioButton-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="ชาย"-->
+                        <!--android:layout_weight="1"/>-->
+                        <!--<RadioButton-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="หญิง"-->
+                        <!--android:layout_weight="1"/>-->
+
+                        <!--</RadioGroup>-->
+
+                    </LinearLayout>
+                    <!-- วันเกิด -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingLeft="33dp"
+                            android:text="วันเกิด" />
+
+                        <TextView
+                            android:id="@+id/editBirth"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:textSize="14sp"
+                            android:textColor="@android:color/black"
+                            android:background="@drawable/edittext_border"
+                            android:layout_weight="1"
+
+                            />
+
+                    </LinearLayout>
+                    <!-- อายุ -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:paddingLeft="33dp"
+                            android:text="อายุ" />
+
+                        <TextView
+                            android:id="@+id/editAge"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:layout_weight="1"
+                            android:textSize="14sp"
+                            android:background="@drawable/edittext_border"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="ปี" />
+
+                    </LinearLayout>
+                    <!-- น้ำหนัก -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:paddingLeft="33dp"
+                            android:text="น้ำหนัก" />
+
+                        <EditText
+                            android:id="@+id/editWeight"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:inputType="number"
+                            android:digits="0123456789"
+                            android:layout_weight="1"
+                            android:textSize="14sp"
+                            android:background="@drawable/edittext_border"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="กิโลกรัม" />
+
+                    </LinearLayout>
+                    <!-- ส่วนสูง -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:paddingLeft="33dp"
+                            android:text="ส่วนสูง" />
+
+                        <EditText
+                            android:id="@+id/editHeight"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:inputType="number"
+                            android:digits="0123456789"
+                            android:layout_weight="1"
+                            android:textSize="14sp"
+                            android:background="@drawable/edittext_border" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="เซนติเมตร" />
+
+                    </LinearLayout>
+                    <!-- ความดัน -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="33dp"
+                            android:layout_weight="2"
+                            android:text="ความดันโลหิต" />
+
+                        <EditText
+                            android:id="@+id/editBloodPressure"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:layout_weight="1"
+                            android:textSize="14sp"
+                            android:background="@drawable/edittext_border"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="มม.ปรอท" />
+
+                    </LinearLayout>
+                    <!-- โรงพยาบาล -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingLeft="33dp"
+                            android:text="โรงพยาบาล" />
+
+                        <com.jaredrummler.materialspinner.MaterialSpinner
+                            android:id="@+id/editHospital"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:layout_weight="1"
+                            android:textSize="14sp"
+                            android:background="@drawable/edittext_border"/>
+
+                    </LinearLayout>
+                    <!-- เบอร์โทรศัพท์ -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingLeft="33dp"
+                            android:text="เบอร์โทรศัพท์" />
+
+                        <EditText
+                            android:id="@+id/editTel"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:inputType="number"
+                            android:digits="0123456789"
+                            android:layout_weight="1"
+                            android:textSize="14sp"
+                            android:background="@drawable/edittext_border"/>
+
+                    </LinearLayout>
+                    <!-- เบอร์โทรหน่วยไตเทียม -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingLeft="33dp"
+                            android:text="เบอร์โทรหน่วยไตเทียม" />
+
+                        <EditText
+                            android:id="@+id/editTelDia"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:inputType="number"
+                            android:digits="0123456789"
+                            android:layout_weight="1"
+                            android:textSize="14sp"
+                            android:background="@drawable/edittext_border"/>
+
+                    </LinearLayout>
+                    <!-- เบอร์โทรพยาบาล -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingLeft="33dp"
+                            android:text="เบอร์โทรพยาบาล" />
+
+                        <EditText
+                            android:id="@+id/editTelHospital"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:inputType="number"
+                            android:digits="0123456789"
+                            android:layout_weight="1"
+                            android:textSize="14sp"
+                            android:background="@drawable/edittext_border"/>
+
+                    </LinearLayout>
+
+                    <!-- email -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingLeft="33dp"
+                            android:text="อีเมล" />
+
+                        <TextView
+                            android:id="@+id/editEmail"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:inputType="textEmailAddress"
+                            android:digits="0123456789"
+                            android:layout_weight="1"
+                            android:textSize="14sp"
+                            android:background="@drawable/edittext_border"/>
+
+                    </LinearLayout>
+
+                    <!-- doctor -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingLeft="33dp"
+                            android:text="แพทย์ผู้ดูแล" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/DOCID"
+                            android:visibility="invisible"/>
+
+
+                        <com.jaredrummler.materialspinner.MaterialSpinner
+                            android:id="@+id/editDoctor"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:layout_weight="1"
+                            android:textSize="14sp"
+                            android:background="@drawable/edittext_border"/>
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/editBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ff0000"
+                        android:text="บันทึก"
+                        android:textAlignment="center" />
+
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--<android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:src="@drawable/ic_lauch"
+        app:layout_anchorGravity="bottom|end" />-->
+
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/alertHistory"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="ประวัติแจ้งเตือน"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:background="#FFE02616"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/alertCalendar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="ปฏิทินพบแพทย์"
+            android:textAlignment="center"
+            android:textColor="#FF8C0B00"
+            android:background="@android:color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/alertCreate"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="สร้างการแจ้งเตือน"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:background="#FFE02616"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+        android:id="@+id/calendarAppointment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.prolificinteractive.materialcalendarview.MaterialCalendarView>
+</LinearLayout>

@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/my_border"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="รายการอาหาร"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:background="#f4b697"
+            android:gravity="bottom"
+            android:text="ปริมาณสารอาหารที่ควรได้รับในแต่ละวัน"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f4b697"
+            android:orientation="horizontal"
+            android:paddingTop="8dp">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"></FrameLayout>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:background="@drawable/meat_background"
+                android:src="@drawable/meatnoback" />
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"></FrameLayout>
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:background="@drawable/fruit_background"
+                android:src="@drawable/fruit" />
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"></FrameLayout>
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:background="@drawable/vegetable_background"
+                android:src="@drawable/vegetable" />
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"></FrameLayout>
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:background="@drawable/rice_background"
+                android:padding="2dp"
+                android:src="@drawable/rice" />
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"></FrameLayout>
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:background="@drawable/oil_background"
+                android:padding="3dp"
+                android:src="@drawable/oil" />
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"></FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f4b697"
+            android:orientation="horizontal"
+            android:paddingTop="8dp">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"></FrameLayout>
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="เนื้อสัตว์"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"></FrameLayout>
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="ผลไม้"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"></FrameLayout>
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="ผัก"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"></FrameLayout>
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="ข้าว/แป้ง"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"></FrameLayout>
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="น้ำมัน"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"></FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f4b697"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"></FrameLayout>
+
+            <TextView
+                android:id="@+id/FoodMeatNum"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="10sp" />
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="ช้อนโต๊ะ"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="10sp" />
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"></FrameLayout>
+
+            <TextView
+                android:id="@+id/FoodFruitNum"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="10sp" />
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="ส่วน"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="10sp" />
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"></FrameLayout>
+
+            <TextView
+                android:id="@+id/FoodVegetableNum"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="10sp" />
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="ส่วน"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="10sp" />
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"></FrameLayout>
+
+            <TextView
+                android:id="@+id/FoodRiceNum"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="10sp" />
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="ส่วน"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="10sp" />
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"></FrameLayout>
+
+            <TextView
+                android:id="@+id/FoodOilNum"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="10sp" />
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="ช้อนชา"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="10sp" />
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"></FrameLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/FoodLayoutDetail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/foodorange_border"
+            android:onClick="onButtonShowPopupWindowClick"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/FoodNewDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:layout_gravity="center_horizontal|center_vertical" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/FoodDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="กดเพื่อดูปริมาณทั้งหมด"
+                    android:textSize="12sp"
+                    android:layout_marginRight="8dp"
+                    android:textColor="@android:color/white"
+                    android:gravity="center_vertical|end"
+                    android:textAlignment="viewEnd"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/food_border"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/FoodMainList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </ListView>
+        </LinearLayout>
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="@drawable/food_border"-->
+            <!--android:orientation="vertical"></LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="@drawable/food_border"-->
+            <!--android:orientation="vertical"></LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="@drawable/food_border"-->
+            <!--android:orientation="vertical"></LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="@drawable/food_border"-->
+            <!--android:orientation="vertical"></LinearLayout>-->
+    </LinearLayout>
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/FoodBtnCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="20dp"
+        android:paddingBottom="9dp"
+        android:paddingLeft="22dp"
+        android:paddingRight="22dp"
+        android:paddingTop="7dp"
+        fancy:fb_borderColor="#FFFFFF"
+        fancy:fb_borderWidth="1dp"
+        fancy:fb_defaultColor="#FB8C00"
+        fancy:fb_focusColor="#dc8609"
+        fancy:fb_radius="100dp"
+        fancy:fb_text="+"
+        fancy:fb_textColor="#FFFFFF"
+        fancy:fb_textSize="35sp" />
+
+</RelativeLayout>

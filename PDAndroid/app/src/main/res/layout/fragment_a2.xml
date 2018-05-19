@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:background="#f0f0f2"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ขั้นตอนน้ำเข้า"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/black"
+        android:textAlignment="center"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="วันที่ล้างไต"
+        android:textSize="15sp"/>
+
+    <DatePicker
+        android:id="@+id/roundDatePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center"
+        android:calendarViewShown="false"
+        android:background="@drawable/my_border"
+        android:datePickerMode="spinner"></DatePicker>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="รอบการล้างไต"
+        android:textSize="15sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/my_border">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="57dp"
+            android:padding="16dp"
+            android:text="รอบที่"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            />
+
+        <com.shawnlin.numberpicker.NumberPicker
+            android:id="@+id/roundNumberPicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            app:np_dividerColor="@color/colorPrimary"
+            app:np_height="50dp"
+            app:np_max="7"
+            app:np_min="1"
+            app:np_orientation="horizontal"
+            app:np_selectedTextColor="@color/colorPrimary"
+            app:np_textColor="@color/colorPrimary"
+            app:np_value="1"
+            app:np_width="145dp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </FrameLayout>
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/roundBtnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:layout_marginBottom="26dp"
+        android:layout_gravity="center"
+        fancy:fb_borderColor="#FFFFFF"
+        fancy:fb_borderWidth="1dp"
+        fancy:fb_defaultColor="@color/colorPrimary"
+        fancy:fb_focusColor="@color/colorPrimaryDark"
+        fancy:fb_text="บันทึก"
+        fancy:fb_textColor="#FFFFFF" />
+
+</LinearLayout>

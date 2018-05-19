@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/my_border"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@drawable/food_border"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/NotiIcon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="6dp"
+            android:src="@drawable/calen"
+            android:padding="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/NotiHis"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/black"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/NotiDate"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="0.8"
+                android:gravity="center_vertical"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

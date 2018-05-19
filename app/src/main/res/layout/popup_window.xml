@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:background="@drawable/my_border"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_marginLeft="8dp"
+            android:text="เนื้อสัตว์" />
+        <TextView
+            android:id="@+id/TotalMeat"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:paddingRight="10dp"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="ช้อนโต๊ะ"/>
+        <TextView
+            android:id="@+id/MaxMeat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:textAlignment="viewEnd"
+            android:layout_marginRight="8dp"
+            android:visibility="invisible"
+            android:layout_gravity="end|center_vertical"
+            android:text="เกินจำนวนที่กำหนด"
+            android:textColor="#FFE60000"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:background="@drawable/my_border"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_marginLeft="8dp"
+            android:text="ผลไม้" />
+
+        <TextView
+            android:id="@+id/TotalFruit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:paddingRight="10dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="ส่วน"/>
+        <TextView
+            android:id="@+id/MaxFruit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:textAlignment="viewEnd"
+            android:visibility="invisible"
+            android:layout_marginRight="8dp"
+            android:layout_gravity="end|center_vertical"
+            android:text="เกินจำนวนที่กำหนด"
+            android:textColor="#FFE60000"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:background="@drawable/my_border"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_marginLeft="8dp"
+            android:text="ผัก" />
+        <TextView
+            android:id="@+id/TotalVeget"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:paddingRight="10dp"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="ส่วน"/>
+        <TextView
+            android:id="@+id/MaxVeget"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:textAlignment="viewEnd"
+            android:layout_marginRight="8dp"
+            android:visibility="invisible"
+            android:layout_gravity="end|center_vertical"
+            android:text="เกินจำนวนที่กำหนด"
+            android:textColor="#FFE60000"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:background="@drawable/my_border"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_marginLeft="8dp"
+            android:text="ข้าว/แป้ง" />
+        <TextView
+            android:id="@+id/TotalRice"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:paddingRight="10dp"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="ส่วน"/>
+        <TextView
+            android:id="@+id/MaxRice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:textAlignment="viewEnd"
+            android:layout_marginRight="8dp"
+            android:visibility="invisible"
+            android:layout_gravity="end|center_vertical"
+            android:text="เกินจำนวนที่กำหนด"
+            android:textColor="#FFE60000"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:background="@drawable/my_border"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_marginLeft="8dp"
+            android:text="น้ำมัน" />
+        <TextView
+            android:id="@+id/TotalOil"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:paddingRight="10dp"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="ช้อนชา"/>
+        <TextView
+            android:id="@+id/MaxOil"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:textAlignment="viewEnd"
+            android:layout_marginRight="8dp"
+            android:visibility="invisible"
+            android:layout_gravity="end|center_vertical"
+            android:text="เกินจำนวนที่กำหนด"
+            android:textColor="#FFE60000"/>
+
+    </LinearLayout>
+
+</LinearLayout>
